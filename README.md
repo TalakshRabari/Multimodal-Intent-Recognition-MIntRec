@@ -139,23 +139,11 @@ cd tcl-map-code
 python run.py --dataset MIntRec --data_path ../mintrec-data/MIntRec --train --save_results
 ```
 
-### Kaggle Execution (1-Click)
+### Kaggle Execution
 In a Kaggle notebook cell with GPU enabled:
-```python
-!python hierarchical_multimodal_experiments.py
+```bash
+!cd tcl-map-code && python run.py --dataset MIntRec --data_path ../mintrec-data/MIntRec --train --save_results
 ```
-
----
-
-## 📄 Resume Bullet Points
-
-If featuring this project on your resume or portfolio:
-
-> - **Multimodal Intent Recognition (MIR) Framework | PyTorch, HuggingFace, Transformers**
->   - Engineered a calibrated hierarchical multimodal deep learning architecture on the 20-class MIntRec dialogue dataset, achieving **74.16% test accuracy**, outperforming the AAAI 2024 benchmark (73.62%).
->   - Mitigated cross-modal negative transfer by designing a **calibrated bounded displacement gate ($\beta=0.007$)** that fuses `wav2vec 2.0` audio and `Swin-B` visual representations into `BERT` embeddings without corrupting text semantics.
->   - Implemented an entropy-gated **sequential level-wise arbitration algorithm**, routing confident text inferences ($c_T \ge \tau$) directly while conditionally activating non-verbal cross-attention for ambiguous utterances.
->   - Conducted systematic ablation studies across 8 empirical axes, including 4-quadrant cross-modal error taxonomies and softmax confidence density profiling.
 
 ---
 
@@ -178,5 +166,6 @@ If featuring this project on your resume or portfolio:
 
 ---
 
-## 👨‍💻 Author
-- **Talaksh Rabari** - [GitHub](https://github.com/TalakshRabari) | [LinkedIn](https://www.linkedin.com/)
+## 👨‍💻 Authors & Contributors
+- **Talaksh Rabari** - [GitHub](https://github.com/TalakshRabari)
+- **Swayam Patel**
