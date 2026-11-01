@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Datasets & Extracted Feature Dumps (>100MB)
+mintrec-data/
+datasets/
+data/
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Deep Learning Checkpoints & Model Weights
+*.pt
+*.pth
+*.bin
+*.onnx
+checkpoints/
+models_saved/
+best_checkpoint/
+cache/
+logs/
+
+# Archives & Temporary files
+*.zip
+*.tar.gz
+*.rar
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# IDE & Editor Configs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.agents/
+
+# Jupyter & Kaggle Notebook Artifacts
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+wandb/
+analysis_plots/
