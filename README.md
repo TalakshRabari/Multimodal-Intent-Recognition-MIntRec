@@ -104,11 +104,6 @@ Analysis of prompt tuning, CNN temporal pyramids, and discrepancy loss curves du
 │   ├── methods/                            # TCL-MAP modules, Alignment Nets & Loss
 │   ├── utils/                              # Metrics, logging & seeds
 │   └── run.py                              # Main training CLI
-├── hierarchical_multimodal_experiments.py # Master unified benchmark suite (8 Research Axes)
-├── hierarchical_sota_champion.py          # SOTA Champion script (Multi-seed + UAGM Noise Filter)
-├── dumir_plus_sota.py                     # Upgraded DUMIR architecture with 1D-CNN temporal pyramids
-├── comprehensive_project_status_and_dataset_report.md # Theoretical analysis & mathematical proofs
-├── project_report.pdf                      # Comprehensive project documentation
 ├── requirements.txt                       # Python dependencies
 └── .gitignore                             # Large dataset & checkpoint filters
 ```
@@ -138,20 +133,11 @@ mintrec-data/MIntRec/
 
 ### Running Experiments
 
-1. **Run the Calibrated SOTA Champion Model (74.16% Test Accuracy)**:
-   ```bash
-   python hierarchical_sota_champion.py
-   ```
-
-2. **Run the Full 8-Axis Experiment Suite (Hierarchical, Sequential Thresholds, Modality Weighting, and Plots)**:
-   ```bash
-   python hierarchical_multimodal_experiments.py
-   ```
-
-3. **Run the Modular TCL-MAP Framework**:
-   ```bash
-   python tcl-map-code/run.py --dataset MIntRec --train --save_results
-   ```
+Train and evaluate the model on the MIntRec dataset:
+```bash
+cd tcl-map-code
+python run.py --dataset MIntRec --data_path ../mintrec-data/MIntRec --train --save_results
+```
 
 ### Kaggle Execution (1-Click)
 In a Kaggle notebook cell with GPU enabled:
